@@ -15,20 +15,17 @@ class UserInfoViewController: UIViewController {
     @IBOutlet var userDepartment: UILabel!
     @IBOutlet var userPost: UILabel!
     
-    
+    var user: User!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        addUser()
+        
+        userFamily.text = user.person.family
+        userName.text = user.person.name
+        userCompany.text = user.person.company
+        userDepartment.text = user.person.department
+        userPost.text = user.person.post
     }
-    
-    func addUser() {
-        userFamily.text = user1.person.family
-        userName.text = user1.person.name
-        userCompany.text = user1.person.company
-        userDepartment.text = user1.person.department
-        userPost.text = user1.person.post
-        }
         
     }
 

@@ -17,7 +17,7 @@
 		7FBE74BD29155EED00F509A5 /* HelloUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBE74BC29155EED00F509A5 /* HelloUserViewController.swift */; };
 		7FBE7510291AC31700F509A5 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBE750F291AC31700F509A5 /* UserInfoViewController.swift */; };
 		7FBE7512291AC32E00F509A5 /* UserInfoBioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBE7511291AC32E00F509A5 /* UserInfoBioViewController.swift */; };
-		7FBE7514291AD8CF00F509A5 /* DataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBE7513291AD8CF00F509A5 /* DataModels.swift */; };
+		7FBE7514291AD8CF00F509A5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBE7513291AD8CF00F509A5 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +33,7 @@
 		7FBE74BC29155EED00F509A5 /* HelloUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloUserViewController.swift; sourceTree = "<group>"; };
 		7FBE750F291AC31700F509A5 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
 		7FBE7511291AC32E00F509A5 /* UserInfoBioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoBioViewController.swift; sourceTree = "<group>"; };
-		7FBE7513291AD8CF00F509A5 /* DataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModels.swift; sourceTree = "<group>"; };
+		7FBE7513291AD8CF00F509A5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +109,7 @@
 		7FBE7518291AD9AB00F509A5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				7FBE7513291AD8CF00F509A5 /* DataModels.swift */,
+				7FBE7513291AD8CF00F509A5 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -195,7 +195,7 @@
 			files = (
 				7F36D63B291BD08200D8A4AD /* TabBarViewController.swift in Sources */,
 				7FBE7512291AC32E00F509A5 /* UserInfoBioViewController.swift in Sources */,
-				7FBE7514291AD8CF00F509A5 /* DataModels.swift in Sources */,
+				7FBE7514291AD8CF00F509A5 /* User.swift in Sources */,
 				7FBE7510291AC31700F509A5 /* UserInfoViewController.swift in Sources */,
 				7FBE74A92915453000F509A5 /* LoginViewController.swift in Sources */,
 				7FBE74A52915453000F509A5 /* AppDelegate.swift in Sources */,

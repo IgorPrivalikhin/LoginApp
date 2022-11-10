@@ -14,8 +14,8 @@ class LoginViewController: UIViewController {
     @IBOutlet var passwordTF: UITextField!
     
     
-    private let user = user1.login
-    private let password = user1.password
+    private let user = User.getUserData()
+    
    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let tabBarVC = segue.destination as? UITabBarController else { return }
@@ -24,10 +24,13 @@ class LoginViewController: UIViewController {
         for viewController in viewControllers {
             if let welcomeVC = viewController as? HelloUserViewController {
                 welcomeVC.user = user
+            } else if let infoVC = viewController as? UserInfoViewController {
+                infoVC.user = user
+            } else if let bioVC = viewController as? UserInfoBioViewController {
+                bioVC.user = user
             }
         }
     }
-
     
     
     
@@ -37,7 +40,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func logInButtonPressed() {
-        guard userNameTF.text == user, passwordTF.text == password else {
+        guard userNameTF.text == user.login, passwordTF.text == user.password else {
             showAlert(
                 withTitle: "Invalid login or password",
                 andMessage: "Pleace enter correct you login and password",
@@ -50,8 +53,8 @@ class LoginViewController: UIViewController {
     
     @IBAction func forgotButton(_ sender: UIButton) { // sender выступает кнопкой и параметром
         sender.tag == 0 // 0 и 1 порядковые номера
-        ? showAlert(withTitle: "Oops!", andMessage: "Your name is \(user)")
-        : showAlert(withTitle: "Oops!", andMessage: "Your password is \(password)")
+        ? showAlert(withTitle: "Oops!", andMessage: "Your name is \(user.login)")
+        : showAlert(withTitle: "Oops!", andMessage: "Your password is \(user.password)")
         }
         
     
@@ -69,3 +72,5 @@ private func showAlert(withTitle title: String, andMessage message: String, text
             present(alert, animated: true)
         }
 }
+
+

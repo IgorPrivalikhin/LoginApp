@@ -11,6 +11,7 @@ class UserInfoBioViewController: UIViewController {
 
     @IBOutlet var infoBioUser: UILabel!
     
+    var user: User!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,7 +19,7 @@ class UserInfoBioViewController: UIViewController {
 
     }
     func addInfoBio() {
-        infoBioUser.text = user1.person.infoBio
+        infoBioUser.text = user.person.infoBio
     }
 
 
